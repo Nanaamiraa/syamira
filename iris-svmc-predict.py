@@ -33,7 +33,7 @@ Y = data.species.copy()
 modelsvmc = pickle.load(open('Iris-model-svm.h5','rb'))
 
 prediction = modelsvmc.predict(df)
-prediction_proba = modelsvmc.predict_proba(df)
+#prediction_proba = modelsvmc.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
 st.write(Y.unique())
@@ -41,5 +41,5 @@ st.write(Y.unique())
 st.subheader('Prediction')
 st.write(prediction)
 
-st.subheader('Prediction Probability')
-st.write(prediction_proba)
+#st.subheader('Prediction Probability')
+#st.write(prediction_proba)
